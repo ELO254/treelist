@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="407dp"
+        android:layout_height="200dp"
+        android:background="@drawable/green"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <!-- Your CardView content here -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@drawable/card" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="350dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center"
+            android:text="KSH:"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/txtnamef"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textAlignment="center"
+
+            android:textSize="36dp" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardView"
+        android:hint="Name of tree"
+        android:layout_marginTop="36dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etLength"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/etName"
+        android:hint="Length of tree in meters"
+        android:layout_marginTop="36dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@id/etLength"
+        android:hint="Diameter of tree in meters"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btntree"
+        android:layout_width="206dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/etDiameter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Submit" />
+
+</RelativeLayout>
+
